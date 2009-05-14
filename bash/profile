@@ -1,0 +1,32 @@
+
+
+
+
+# eclipse's Ant runtime only looks in here for 
+# its env. variables I think...
+export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/1.6/Home
+export M2_HOME=/Java/apache-maven-2.0.9
+export AXIS2_HOME=/Java/axis2-1.3
+export M2=$M2_HOME/bin
+export PATH=$M2:$PATH
+
+alias jb='sudo $JBOSS_HOME/bin/run.sh -b 0.0.0.0'
+alias sjb='sudo $JBOSS_HOME/bin/shutdown.sh -S'
+alias ls='ls -CFG'
+alias ll='ls -la'
+
+test -r /sw/bin/init.sh && . /sw/bin/init.sh
+
+##
+# Your previous /Users/chris/.profile file was backed up as /Users/chris/.profile.macports-saved_2009-03-23_at_22:40:25
+##
+
+# MacPorts Installer addition on 2009-03-23_at_22:40:25: adding an appropriate PATH variable for use with MacPorts.
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+# Finished adapting your PATH environment variable for use with MacPorts.
+
+
+# MacPorts Installer addition on 2009-03-23_at_22:40:25: adding an appropriate MANPATH variable for use with MacPorts.
+export MANPATH=/opt/local/share/man:$MANPATH
+# Finished adapting your MANPATH environment variable for use with MacPorts.
+
