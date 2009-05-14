@@ -1,0 +1,16 @@
+#!/bin/bash
+function update_osxcfgfiles {
+  cp .bashrc osxcfgfiles/bash/bashrc
+  cp -R .vim/colors osxcfgfiles/vim
+  cp .vimrc osxcfgfiles/vim/vimrc
+  cp .gvimrc osxcfgfiles/vim/gvimrc
+}
+
+echo -e "${COLOR_RED}Are you sure you want to update files${COLOR_NC}?"
+select yn in "Yes" "No"; do
+  case $yn in
+    Yes ) update_osxcfgfiles ; break;;
+    No ) exit;;
+  esac
+done
+
