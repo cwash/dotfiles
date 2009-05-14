@@ -170,3 +170,6 @@ export PS1="\[${COLOR_LIGHT_BLUE}\]\T \[${COLOR_GRAY}\]\!:\# \[${COLOR_GREEN}\]\
 export PS2='> '    # Secondary prompt
 export PS3='#? '   # Prompt 3
 export PS4='+'     # Prompt 4	
+
+######### hists - history search #######
+alias hists="history | grep -v '^ *[0-9]* *hists' | grep $@"
