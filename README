@@ -1,1 +1,5 @@
 These are my dotfiles for Bash under OSX and Vim.
+
+Based heavily off of Tim Werth's work: 
+  * http://blog.infinitered.com/entries/
+  * http://github.com/twerth/dotfiles/tree/master
