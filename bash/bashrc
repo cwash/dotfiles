@@ -173,3 +173,14 @@ export PS4='+'     # Prompt 4
 
 ######### hists - history search #######
 alias hists="history | grep -v '^ *[0-9]* *hists' | grep $@"
+
+######### Java junk #######
+jarscan() {
+  pattern=$(echo $1 | tr . /)
+  find . -name '*.jar' | while read jarfile; do if unzip -l "$jarfile" | grep "$pattern"; then echo "$jarfile"; fi; done
+}
+mvnscan() {
+  pushd ~/.m2/repository 
+  grep -r -H "$1" * 
+  popd
+}
